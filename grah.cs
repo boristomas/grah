@@ -17,7 +17,8 @@ namespace grahSaKobasicamaIŠpekom
         public static sastojak luk = new sastojak("luk ljubičasti", "0.316kg", 1.42F);
         public static sastojak limun = new sastojak("limun obični", "1 veliki komad", 0.80F);
         public static sastojak voda = new sastojak("voda iz pipe", "2 litre", 0.0F);
-		public static sastojak vino = new sastojak("fino francusko vino", "1 litra", 0.0F);
+		public static sastojak vino = new sastojak("fino francusko vino", "1 litra", 30.0F);
+		public static sastojak vinoMalo = new sastojak("malo crno vino", "200 ml", 9.0F);
         public static sastojak kobasica1 = new sastojak("zagrebačka kobasica", "4 para", 60.0F);
         public static sastojak kobasica2 = new sastojak("kranjska kobasica podravka", "2 para", 30.0F);
         public static sastojak kobasica3 = new sastojak("kranjska kobasica pik", "5 para", 70.0F);
@@ -27,7 +28,6 @@ namespace grahSaKobasicamaIŠpekom
         public static sastojak kocka = new sastojak("kocka za juhu - goveđa", "2 komada", 9.0F);
         public static sastojak feferon = new sastojak("feferon blagi", "ona najmanja staklenka", 9.0F);
         public static sastojak paprika = new sastojak("mljevena ljuta paprika", "1 čajna žlica", 0.01F);
-        public static sastojak vino = new sastojak("crno malo vino", "0.1L", 4.0F);
         public static sastojak rajčica = new sastojak("koncentrat rajčice", "0.2L", 3.0F);
         public static oprema lonac = new oprema();
         public static oprema posuda1 = new oprema();
@@ -74,7 +74,7 @@ namespace grahSaKobasicamaIŠpekom
             tava.Clear();
             limun.iscijedi();
             posuda2.Add(limun);
-            posuda2.Add(vino);
+            posuda2.Add(vinoMalo);
             tava.Add(kobasica1);
             tava.ispržiSadržaj("da bude lagano hrskavo");
             tava.isprazniU(posuda3);
@@ -147,6 +147,7 @@ namespace grahSaKobasicamaIŠpekom
         float vrij;
         public sastojak(string naziv, string količina, float vrijednost)
         {
+		//vrijednost je u kunama
             naz = naziv;
             kol = količina;
             vrij = vrijednost;
