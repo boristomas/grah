@@ -16,9 +16,9 @@ namespace grahSaKobasicamaIŠpekom
         public static sastojak sol = new sastojak("sol sitna morska", "2 žlice", 0.0F);
         public static sastojak luk = new sastojak("luk ljubičasti", "0.316kg", 1.42F);
         public static sastojak limun = new sastojak("limun obični", "1 veliki komad", 0.80F);
-        public static sastojak voda = new sastojak("voda iz pipe", "2 litre", 0.0F);
-		public static sastojak vino = new sastojak("fino francusko vino", "1 litra", 30.0F);
-		public static sastojak vinoMalo = new sastojak("malo crno vino", "200 ml", 9.0F);
+        public static sastojak voda = new sastojak("voda iz slavine", "2 litre", 0.0F);
+	public static sastojak vino = new sastojak("fino francusko vino", "1 litra", 30.0F);
+	public static sastojak vinoMalo = new sastojak("malo crno vino", "200 ml", 9.0F);
         public static sastojak kobasica1 = new sastojak("zagrebačka kobasica", "4 para", 60.0F);
         public static sastojak kobasica2 = new sastojak("kranjska kobasica podravka", "2 para", 30.0F);
         public static sastojak kobasica3 = new sastojak("kranjska kobasica pik", "5 para", 70.0F);
@@ -69,7 +69,7 @@ namespace grahSaKobasicamaIŠpekom
             posuda1.Add(rajčica);
             tava.Clear();
             tava.Add(slanina1);
-            tava.ispržiSadržaj("malo, dok ne postane zlatko smeđe");
+            tava.ispržiSadržaj("malo, dok ne postane zlatno smeđe");
             tava.isprazniU(posuda2);
             tava.Clear();
             limun.iscijedi();
