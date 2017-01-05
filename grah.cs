@@ -11,6 +11,7 @@ namespace grahSaKobasicamaIŠpekom
     /// </summary>
     class Program
     {
+	//2 kobasice po osobi, speka isto toliko, 1 konzerva graha po osobi (manja)
         public static sastojak grah = new sastojak("grah crveni", "1kg", 20.00F);
         public static sastojak šećer = new sastojak("šečer kristal", "2 žlice", 0.0F);
         public static sastojak sol = new sastojak("sol sitna morska", "2 žlice", 0.0F);
