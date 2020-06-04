@@ -14,7 +14,6 @@ namespace grahSaKobasicamaIŠpekom
 	//2 kobasice po osobi, speka isto toliko, 1 konzerva graha po osobi (manja)
         public static sastojak grah = new sastojak("grah crveni", "1kg", 20.00F);
         public static sastojak šećer = new sastojak("šečer kristal", "2 žlice", 0.0F);
-        public static sastojak sol = new sastojak("sol sitna morska", "2 žlice", 0.0F);
         public static sastojak luk = new sastojak("luk ljubičasti", "0.316kg", 1.42F);
         public static sastojak limun = new sastojak("limun obični", "1 veliki komad", 0.80F);
         public static sastojak voda = new sastojak("voda iz slavine", "2 litre", 0.0F);
@@ -43,7 +42,6 @@ namespace grahSaKobasicamaIŠpekom
             lonac.Add(grah);
             lonac.Add(mrkva);
             lonac.Add(šećer);
-            lonac.Add(sol);
             lonac.Add(voda);
             BackgroundWorker DokSeGrahKuha = new BackgroundWorker();
             DokSeGrahKuha.DoWork += new DoWorkEventHandler(DokSeGrahKuha_DoWork);
